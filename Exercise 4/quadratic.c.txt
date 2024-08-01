@@ -1,0 +1,49 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <math.h>
+#include <stdio.h>
+
+void print_quadratic(double a, double b, double c);
+
+int find_roots(double a, double b, double c, double* p1, double* p2);
+
+int main()
+{
+    double a, b, c;
+    printf("Please enter three numbers:\n");
+    scanf("%lf%lf%lf", &a, &b, &c);
+
+    double r1, r2;
+    int n = find_roots(a, b, c, &r1, &r2);
+
+    print_quadratic(a, b, c);
+    printf(" = 0 has ");
+
+    switch (n) {
+    case 0:
+        printf("no real roots\n");
+        break;
+    case 1:
+        printf("one real root: %g\n", r1);
+        break;
+    case 2:
+        printf("two real roots: %g and %g\n", r1, r2);
+        break;
+    case -1:
+        printf("infinite real roots\n");
+        break;
+    default:
+        printf("%d roots? impossible!\n", n);
+    }
+
+    return 0;
+}
+
+void print_quadratic(double a, double b, double c)
+{
+
+}
+
+int find_roots(double a, double b, double c, double* p1, double* p2)
+{
+
+}
