@@ -1,2 +1,2 @@
 # TAU-C-Course
-Answers to Tel Aviv university C course assignments
+Code to Tel Aviv university electrical engineering C course assignments
